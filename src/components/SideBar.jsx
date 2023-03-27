@@ -15,7 +15,7 @@ export function SideBar() {
                         <i class="fas fa-th-large nav_icon"></i>
                         <span className="nav_name">Dashboard</span> 
                     </Link>
-                    <Link to="laporan" className="nav_link">
+                    <Link to="/laporan" className="nav_link">
                         <i class="fas fa-book nav_icon"></i>
                         <span className="nav_name">Laporan Magang</span> 
                     </Link>
