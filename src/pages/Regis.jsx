@@ -1,5 +1,5 @@
 import React from "react";
-
+import {Link} from "react-router-dom";
 export function Regis() {
   return (
     <>
@@ -11,7 +11,7 @@ export function Regis() {
                     <input type="password" />    
                 </div>    
                 <div className="btn-proses">
-                    <a href="/" type="button">Masuk</a>
+                    <Link to="/" type="button">Masuk</Link>
                 </div>
             </div>
         </div>
