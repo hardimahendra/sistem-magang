@@ -1,6 +1,7 @@
 import React from "react";
 import {Navbar} from "../components/Navbar"
 import { SideBar } from "../components/SideBar";
+import { Link } from "react-router-dom";
 export function Dashboard() {
   return (
     <>
@@ -80,7 +81,7 @@ export function Dashboard() {
                 </div>
             </div>
             <div className="info-detail">
-                <a href="/daftar" className="btn btn-primary">Detail</a>
+                <Link to="/daftar" className="btn btn-primary">Detail</Link>
             </div>
         </div>
         </div>
