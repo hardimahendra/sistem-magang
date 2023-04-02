@@ -15,8 +15,6 @@
     box-sizing: border-box;
 }
 html,body {
-    height: 100%;
-    width: 100%;
     position: relative;
     margin: var(--header-height) 0 0 0;
     padding: 0 1rem;
@@ -137,7 +135,7 @@ a {
     position: fixed;
     top: 0;
     left: -30%;
-    width: 200px;
+    width: var(--nav-width);
     height: 100vh;
     background-color: var(--first-color);
     padding: 0.5rem 1rem 0 0;
@@ -234,6 +232,7 @@ a {
 .container {
     height: 100%;
     width: 100%;
+    padding:15px;
 }
 .content-dashboard {
     display: flex;
