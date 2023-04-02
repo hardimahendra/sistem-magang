@@ -6,12 +6,12 @@ export function SideBar() {
     <div className="l-navbar" id="nav-bar">
         <nav className="nav">
             <div> 
-                <Link to="/" className="nav_logo"> 
+                <Link to="/dashboard" className="nav_logo"> 
                     <img width="25" src="img/unsika-logo.png"/>
                     <span className="nav_logo-name">UNSIKA</span> 
                 </Link>
                 <div className="nav_list">
-                    <Link to="/" className="nav_link active">
+                    <Link to="/dashboard" className="nav_link active">
                         <i class="fas fa-th-large nav_icon"></i>
                         <span className="nav_name">Dashboard</span> 
                     </Link>
