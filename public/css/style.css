@@ -21,14 +21,16 @@ html,body {
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
     transition: 0.5s;
-    background: url("../img/background-logo-unsika.png") no-repeat fixed center;
-
+    background: #eee;
+}
 .home, .regis{
     height: 100%;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    background: url("../img/background-logo-unsika.png") no-repeat fixed center;
+    background-size: 100% 100%;
 }
 .home .form{
     display: flex;
