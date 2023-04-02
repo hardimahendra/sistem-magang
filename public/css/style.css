@@ -29,8 +29,7 @@ html,body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url("../img/background-logo-unsika.png") no-repeat fixed center;
-    background-size: 100% 100%;
+    background: #eee;
 }
 .home .form{
     display: flex;
