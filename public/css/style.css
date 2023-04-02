@@ -31,7 +31,7 @@ html,body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("../img/background-logo-unsika.png");
+    background: url("../img/background-logo-unsika.png") no-repeat fixed center;
 }
 .home .form{
     display: flex;
