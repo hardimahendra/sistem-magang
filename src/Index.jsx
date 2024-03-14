@@ -1,3 +1,4 @@
+import {Link} from 'react-router-dom'
 const Index = () => {
   return (
     <>
@@ -9,15 +10,11 @@ const Index = () => {
             <input type="password" />
           </div>
           <div className="btn-proses">
-            <a href="/dashboard" type="button">
-              Masuk
-            </a>
-            <a href="/regis" type="button">
-              Daftar
-            </a>
+            <Link to="/dashboard" type="button">Masuk</Link>
+            <Link to="/regis" type="button">Daftar</Link>
           </div>
         </div>
-      </div>
+    </div>
     </>
   );
 };

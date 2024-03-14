@@ -82,6 +82,7 @@ const Dashboard = () => {
               <a href="/daftar" className="btn btn-primary">
                 Detail
               </a>
+                <Link to="/daftar" className="btn btn-primary">Detail</Link>
             </div>
           </div>
         </div>
