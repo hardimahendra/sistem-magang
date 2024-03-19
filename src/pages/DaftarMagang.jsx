@@ -1,4 +1,4 @@
-const Daftar = () => {
+const DaftarMagang = () => {
   return (
     <>
       <div className="container">
@@ -6,7 +6,7 @@ const Daftar = () => {
           <div className="form-content">
             <div>
               <h5>Magang Umum</h5>
-              <h6 className="fw-bold">Tahap Pendaftaran Magang</h6>
+              <h6 className="fw-bold">Tahap PendaftarMagangan Magang</h6>
               <div>
                 <i className="fas fa-caret-right"></i>
                 <a href="#">Form Permohonan Magang</a>
@@ -118,4 +118,4 @@ const Daftar = () => {
     </>
   );
 };
-export default Daftar;
+export default DaftarMagang;

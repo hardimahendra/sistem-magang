@@ -1,36 +1,37 @@
 import React from "react";
-
+import { Link } from 'react-router-dom';
+import { RxDashboard } from 'react-icons/rx';
+import { TbReportAnalytics, TbLogout } from 'react-icons/tb';
+import { IoMdList } from 'react-icons/io';
 const SideBar = () => {
   return (
     <>
-      <div className="l-navbar" id="nav-bar">
-        <nav className="nav">
-          <div>
-            <a href="/" className="nav_logo">
-              <img width="25" src="img/unsika-logo.png" />
-              <span className="nav_logo-name">UNSIKA</span>
-            </a>
-            <div className="nav_list">
-              <a href="/" className="nav_link active">
-                <i class="fas fa-th-large nav_icon"></i>
-                <span className="nav_name">Dashboard</span>
-              </a>
-              <a href="laporan" className="nav_link">
-                <i class="fas fa-book nav_icon"></i>
-                <span className="nav_name">Laporan Magang</span>
-              </a>
-              <a href="/daftar" className="nav_link">
-                <i class="fa-solid fa-calendar-week nav_icon"></i>
-                <span className="nav_name">Daftar Magang</span>
-              </a>
-            </div>
+      <nav className="fixed left-0 flex flex-col h-full w-[4%] justify-between items-center bg-red-500 ">
+        <div className="p-2 flex flex-col justify-around w-full gap-5">
+          <div className="flex p-1 justify-center items-center">
+            <Link to="/">
+              <img className="w-[45px]" src="img/unsika-logo.png" />
+              {/* <span className="nav_logo-name">UNSIKA</span> */}
+            </Link>
           </div>
-          <a href="/" className="nav_link">
-            <i className="fas fa-sign-out-alt nav_icon"></i>
-            <span className="nav_name">SignOut</span>
+          <div className="flex flex-col items-center gap-4">
+            <Link to="/dashboard" className="flex w-[30px] my-2 ">
+              <RxDashboard className="w-full h-full" />
+            </Link>
+            <Link to="/laporan" className="w-[30px] my-2 ">
+              <TbReportAnalytics className="w-full h-full" />
+            </Link>
+            <Link to="/daftarMagang" className="w-[30px] my-2 ">
+              <IoMdList className="w-full h-full" />
+            </Link>
+          </div>
+        </div>
+        <div className="flex mb-2  items-center justify-center">
+          <a href="/" className="w-[55px] h-[55px] flex justify-center items-center">
+            <TbLogout className="w-1/2 h-1/2" />
           </a>
-        </nav>
-      </div>
+        </div>
+      </nav>
     </>
   );
 };

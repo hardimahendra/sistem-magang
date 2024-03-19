@@ -1,7 +1,15 @@
-import { Link } from "react-router-dom";
+import { Link, Outlet } from 'react-router-dom';
+import Navbar from '../components/Navbar';
+import SideBar from '../components/SideBar';
+import Footer from '../components/Footer';
 const Dashboard = () => {
   return (
     <>
+    <SideBar/>
+    <Navbar/>
+    <Outlet/>
+    <Footer/>
+      {/* 
       <div className="container">
         <div className="content-dashboard">
           <div className="riwayat-magang">
@@ -25,7 +33,7 @@ const Dashboard = () => {
                 Detail
               </a>
             </div>
-          </div>
+          </div> 
           <div className="laporan-magang">
             <h5 className="fw-bold pb-2">Laporan Magang</h5>
             <div className="pdf-file">
@@ -46,7 +54,7 @@ const Dashboard = () => {
               </a>
             </div>
           </div>
-          <div className="form-content">
+           <div className="form-content">
             <div>
               <h5>Magang Umum</h5>
               <h6 className="fw-bold">Tahap Pendaftaran Magang</h6>
@@ -88,6 +96,7 @@ const Dashboard = () => {
           </div>
         </div>
       </div>
+           */}
     </>
   );
 };

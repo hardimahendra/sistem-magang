@@ -1,4 +1,4 @@
-const Regis = () => {
+const Register = () => {
   return (
     <>
       <div className="regis">
@@ -18,4 +18,4 @@ const Regis = () => {
     </>
   );
 };
-export default Regis;
+export default Register;
